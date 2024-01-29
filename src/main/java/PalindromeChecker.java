@@ -54,7 +54,7 @@ public String reverse(String str)
     String sNew = new String();
       for(int i = 0;i<str.length();i++){
     if(!str.substring(i,i+1).equals(" ")){
-      sNew = x + str.substring(i,i+1);
+      sNew = sNew + str.substring(i,i+1);
     }
   }
     return sNew;
