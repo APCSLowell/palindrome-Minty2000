@@ -39,8 +39,8 @@ public boolean palindrome(String word)
 {
   //your code here
     String n = new String();
-  for(int i = 0; i< sWord.length();i++){
-    n = sWord.substring(i,i +1)+n;
+  for(int i = 0; i< word.length();i++){
+    n = word.substring(i,i +1)+n;
   }
   return n;
   return false;
@@ -48,10 +48,10 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
     String sNew = new String();
-      for(int i = 0; i< sWord.length();i++){
-    n = sWord.substring(i,i +1)+n;
+      for(int i = 0; i< str.length();i++){
+    n = str.substring(i,i +1)+n;
   }
-  if(sWord.substring(0,sWord.length()).equals(n)){
+  if(str.substring(0,str.length()).equals(n)){
     return true;
   }
   else 
