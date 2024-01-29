@@ -42,19 +42,16 @@ public boolean palindrome(String word)
   for(int i = 0; i< word.length();i++){
     n = word.substring(i,i +1)+n;
   }
-  return n;
+  if(word.substring(0,word.length()).equals(n)){
+    return true;
+  }
+  else 
   return false;
+  
 }
 public String reverse(String str)
 {
     String sNew = new String();
-      for(int i = 0; i< str.length();i++){
-    n = str.substring(i,i +1)+n;
-  }
-  if(str.substring(0,str.length()).equals(n)){
-    return true;
-  }
-  else 
     return sNew;
 }
 }
