@@ -56,14 +56,15 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
     String sNew = new String();
+    String spa = new String ();
   for(int i = 0; i< str.length();i++){
     sNew = str.substring(i,i +1)+ sNew;
   }
-   for(int i = 0;i<str.length();i++){
-    if(!str.substring(i,i+1).equals(" ")){
-      sNew = sNew + str.substring(i,i+1);
+   for(int i = 0;i<sNew.length();i++){
+    if(!sNew.substring(i,i+1).equals(" ")){
+      spa = spa + sNew.substring(i,i+1);
     }
  }
-  return sNew.toLowerCase();
+  return spa.toLowerCase();
 }
 }
