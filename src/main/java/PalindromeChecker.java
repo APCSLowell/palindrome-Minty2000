@@ -48,7 +48,7 @@ public boolean palindrome(String word)
   if(n.substring(0,word.length()).equals(reverse(word))){
     return true;
   }
-  else 
+  
   return false;
   
 }
