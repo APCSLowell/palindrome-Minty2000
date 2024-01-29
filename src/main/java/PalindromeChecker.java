@@ -45,7 +45,7 @@ public boolean palindrome(String word)
     }
  }
   
-  if(word.substring(0,word.length()).equals(n)){
+  if(word.substring(0,word.length()).equals(reverse(word))){
     return true;
   }
   else 
@@ -59,6 +59,6 @@ public String reverse(String str)
   for(int i = 0; i< str.length();i++){
     sNew = str.substring(i,i +1)+ sNew;
   }
-  return sNew;
+  return sNew.toLowerCase();
 }
 }
