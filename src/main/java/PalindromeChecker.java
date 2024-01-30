@@ -73,7 +73,14 @@ public String reverse(String str)
     if(!sNew.substring(i,i+1).equals(" ")){
       spa = spa + sNew.substring(i,i+1);
     }
- }
-  return spa.toLowerCase();
+ }  
+  String x="";
+  for(int i = 0; i<n.length();i++){
+    if(Character.isLetter(n.charAt(i))){
+      x= x +n.substring(i,i+1);
+    }
+  }
+  
+  return x.toLowerCase();
 }
 }
