@@ -43,9 +43,18 @@ public boolean palindrome(String word)
     if(!word.substring(i,i+1).equals(" ")){
       n = n + word.substring(i,i+1);
     }
- }
+ }  
   
-  if(n.substring(0,word.length()).equals(reverse(word))){
+  String x="";
+  for(int i = 0; i<n.length();i++){
+    if(Character.isLetter(n.charAt(i))){
+      x= x +n.substring(i,i+1);
+    }
+  }
+  
+  
+  
+  if(x.substring(0,word.length()).equals(reverse(word))){
     return true;
   }
   
