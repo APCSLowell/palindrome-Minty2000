@@ -75,9 +75,9 @@ public String reverse(String str)
     }
  }  
   String x="";
-  for(int i = 0; i<n.length();i++){
-    if(Character.isLetter(n.charAt(i))){
-      x= x +n.substring(i,i+1);
+  for(int i = 0; i<spa.length();i++){
+    if(Character.isLetter(spa.charAt(i))){
+      x= x +spa.substring(i,i+1);
     }
   }
   
