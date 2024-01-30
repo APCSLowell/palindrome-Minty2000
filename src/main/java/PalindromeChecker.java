@@ -54,7 +54,7 @@ public boolean palindrome(String word)
   
   
   
-  if(x.equals(reverse(x))){
+  if(x.toLowerCase().equals(reverse(x))){
     return true;
   }
   
