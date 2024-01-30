@@ -68,6 +68,6 @@ public String reverse(String str)
   for(int i = 0; i< str.length();i++){
     n = str.substring(i,i +1)+n;
   }
-  return n;
+  return n.ToLowerCase();
 }
 }
