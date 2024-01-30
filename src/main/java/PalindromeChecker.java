@@ -64,23 +64,10 @@ public boolean palindrome(String word)
 
 public String reverse(String str)
 {
-    String sNew = new String();
-    String spa = new String ();
+  String n = new String();
   for(int i = 0; i< str.length();i++){
-    sNew = str.substring(i,i +1)+ sNew;
+    n = str.substring(i,i +1)+n;
   }
-   for(int i = 0;i<sNew.length();i++){
-    if(!sNew.substring(i,i+1).equals(" ")){
-      spa = spa + sNew.substring(i,i+1);
-    }
- }  
-  String x="";
-  for(int i = 0; i<spa.length();i++){
-    if(Character.isLetter(spa.charAt(i))){
-      x= x +spa.substring(i,i+1);
-    }
-  }
-  
-  return x.toLowerCase();
+  return n;
 }
 }
